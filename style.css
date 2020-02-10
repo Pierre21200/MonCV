@@ -1,0 +1,318 @@
+.conteneur
+{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	width: 630px;
+	height: auto;
+	margin: auto;
+	margin-top: 50px;
+	border: 1px solid black;
+}
+
+header
+{
+	display: flex;
+	justify-content: row;
+	height: 200px;
+}
+
+.aside-section
+{
+	display: flex;
+	justify-content: row;
+	font-size: 12px;
+}
+
+section
+{
+	width: 67%;
+}
+
+.photo
+{
+	width: 33%;
+	background-color: #03A9F4;
+}
+
+.nom
+{
+	width: 67%;
+}
+
+.f1, .f2, .ex1, .ex2
+{
+	display: flex;
+	justify-content: row;
+	width: 100%;
+}
+
+.OC, .uni, .MC, .cafe
+{
+	width: 67%;
+}
+
+.date
+{
+	width: 33%;
+}
+
+img
+{
+	height: 125px;
+	width: 125px;
+}
+
+.photo
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nom
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1
+{
+	font-size: 2rem;
+	margin: 0px;
+	font-weight: 500;
+    line-height: 1.2;
+}
+
+header h2
+{
+	font-weight: 500;
+	font-size: 15px;
+	margin: 0px;
+}
+
+.blue
+{
+	color: #03A9F4;
+}
+
+.underline
+{
+	border-bottom: 1px solid #03A9F4;
+}
+
+aside
+{
+	width: 33%;
+	background-color: #03A9F4;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+aside h3
+{
+	background-color: #424242;
+	color: #03A9F4;
+	font-size: 15px;
+	padding: 4px 0px 4px 0px;
+	font-weight: 500;
+}
+
+aside p
+{
+	margin-top: 20px;
+}
+
+.loisirs
+{
+	margin-bottom: 50px;
+}
+
+.icones
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 30px 30px 0px 30px;
+	color: #424242;
+}
+
+.contact h3
+{
+	margin-top: 0px;
+}
+
+section h5, h4
+{
+	margin: 5px 0px 5px 0px;
+}
+
+section h5
+{
+	font-size: 11px;
+}
+
+ul
+{
+	list-style-type: none;
+	margin-left: -1em;
+}
+
+li::before 
+{
+	content: "•"; 
+	color: #03A9F4;
+	display: inline-block; 
+	width: 1em;
+}
+
+.reco h4
+{
+	text-align: center;
+}
+
+.stage
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.ligne
+{
+	border-top: 1px solid #03A9F4;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+section i
+{
+	margin-left: 15px;
+	margin-right: 10px;
+	color: #03A9F4;
+}
+
+.a-propos p
+{
+	padding: 0px 5px 0px 5px;
+}
+
+section h3
+{
+	font-weight: 500;
+	font-size: 16px;
+}
+
+@media (max-width: 991px) {
+	.aside-section
+	{
+		flex-direction: column;
+	}
+
+	aside
+	{
+		flex-direction: row;
+		width: 100%;
+	}
+
+	section
+	{
+		width: 90%;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.infos
+	{
+		width: 33.3%;
+	}
+
+	aside h3
+	{
+		margin: 0px;
+	}
+
+	.loisirs
+	{
+		margin-bottom: 0px;
+	}
+
+	.contact, .a-propos, .loisirs
+ 	{
+  		border: 1px dotted #424242;
+	}
+
+	.photo
+	{
+		border-right: 1px dotted #424242;
+	}
+
+	.icones
+	{
+		margin-top : 70px;
+	}
+}
+
+@media (max-width: 767px) 
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.photo
+	{
+		width: 100%;
+		padding: 20px 0px 20px 0px;
+	}
+
+	.nom
+	{
+		width: 100%;
+		margin: 30px 0px;
+	}
+}
+
+@media (max-width: 660px) 
+	{
+		.conteneur
+		{
+			width: auto;
+		}
+	}
+
+
+@media (max-width: 575px) 
+	{
+		aside
+		{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.infos
+		{
+			width: 100%;
+			border: none;
+		}
+
+		.icones
+		{
+			padding-bottom: 50px;
+		}
+	}
+
+@media (max-width: 300px) 
+	{
+		.conteneur
+		{
+			width: 300px;
+		}
+	}
+
+
