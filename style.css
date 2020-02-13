@@ -183,6 +183,11 @@ section h3 {
   font-size: 16px;
 }
 
+.titre {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 991px) {
   .aside-section {
     flex-direction: column;
@@ -246,7 +251,7 @@ section h3 {
 
 @media (max-width: 660px) {
   .conteneur {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -266,8 +271,78 @@ section h3 {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 321px) {
   .conteneur {
-    width: 300px;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .f1,
+  .f2,
+  .ex1,
+  .ex2,
+  .stage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    margin: 12px 0px;
+    padding: 0px;
+  }
+
+  ul li {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .ligne {
+    width: auto;
+    margin: 0px 10px 30px 10px;
+    padding: 0px;
+  }
+  aside {
+    margin-bottom: 30px;
+  }
+  aside p {
+    margin: 0px 20px;
+  }
+
+  aside h3 {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .icones {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .titre i {
+    width: 20%;
+    margin: 0px;
+  }
+
+  .titre h3 {
+    width: 60%;
+    margin-right: 20%;
+    text-align: center;
   }
 }
