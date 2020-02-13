@@ -1,3 +1,4 @@
+
 .conteneur {
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   width: 630px;
@@ -148,6 +149,11 @@ li::before {
   display: inline-block;
   width: 1em;
 }
+.date p
+{
+	margin-top: -10px;
+	padding-left: 40px;
+}
 
 .reco h4 {
   text-align: center;
@@ -247,9 +253,17 @@ section h3 {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 650px) {
   .conteneur {
-    width: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+  }
+  
+  body 
+  {
+	  margin:0px;
+	  padding:0px;
   }
 }
 
@@ -294,7 +308,8 @@ section h3 {
   }
 
   ul li {
-    width: 100%;
+	width: 100%;
+	margin-left: -5px;
   }
 
   section {
@@ -343,6 +358,13 @@ section h3 {
     margin-right: 20%;
     text-align: center;
   }
+
+  .date p
+  {
+	  padding-left: 0px;
+  }
+
+
 }
 
 @media (max-width: 220px) {
@@ -350,4 +372,5 @@ section h3 {
 	{
 		min-width: 220px;
 	}
+
 }
